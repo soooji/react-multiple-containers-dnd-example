@@ -1,0 +1,72 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier",
+        "react-hooks"
+    ],
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "jasmine": true,
+        "jest": true
+    },
+    "rules": {
+        "prettier/prettier": [
+            "warn",
+            {
+                "singleQuote": true,
+                "endOfLine": "auto"
+            }
+        ],
+        "@typescript-eslint/explicit-module-boundary-types": 0,
+        "@typescript-eslint/no-use-before-define": [
+            2,
+            {
+                "variables": true,
+                "functions": true,
+                "classes": false
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "eqeqeq": [
+            1,
+            "always"
+        ],
+        "react/prop-types": 0,
+        "no-var": 1,
+        "@typescript-eslint/no-unused-vars": [
+            "warn",
+            {
+                "ignoreRestSiblings": true
+            }
+        ],
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": [
+            "warn",
+            {
+                "additionalHooks": "(useDeepEffect)"
+            }
+        ],
+        "react/display-name": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "no-console": "warn"
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
+    "parser": "@typescript-eslint/parser"
+}
