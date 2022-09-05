@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "rootDir": "src",
+        "target": "es2019",
+        "module": "esnext",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "allowJs": false,
+        "skipLibCheck": true,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "sourceMap": true,
+        "importHelpers": true,
+        "declaration": false,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "jsx": "react-jsx",
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "scripts",
+    ]
+}
